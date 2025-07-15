@@ -33,7 +33,7 @@ router.get("/", async (req, res) => {
         },
         printQRInTerminal: false,
         logger: pino({ level: "fatal" }).child({ level: "fatal" }),
-        browser: Browsers.macOS("Safari"),
+        browser: Browsers.macOS("Brave"),
       });
 
       if (!RobinPairWeb.authState.creds.registered) {
@@ -58,7 +58,7 @@ router.get("/", async (req, res) => {
 
             function randomMegaId(length = 6, numberLength = 4) {
               const characters =
-                "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+                "ShadowXMD=KLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
               let result = "";
               for (let i = 0; i < length; i++) {
                 result += characters.charAt(
@@ -81,8 +81,18 @@ router.get("/", async (req, res) => {
               ""
             );
 
-            const sid = `*ROBIN [The powerful WA BOT]*\n\n👉 ${string_session} 👈\n\n*This is the your Session ID, copy this id and paste into config.js file*\n\n*You can ask any question using this link*\n\n*wa.me/message/WKGLBR2PCETWD1*\n\n*You can join my whatsapp group*\n\n*https://chat.whatsapp.com/GAOhr0qNK7KEvJwbenGivZ*`;
-            const mg = `🛑 *Do not share this code to anyone* 🛑`;
+            const sid = `╭━━〔🔗 Pair Code Connected 〕━━╮  
+✅ *Your WhatsApp is now linked successfully!*  
+🛠️ _Waiting for Shadow XMD Bot to start..._  
+💡 *Note:* Bot not connected yet.  
+👨‍💻 *Developer:* 𝑲𝒂𝒗𝒊𝒏𝒅𝒖 𝑰𝒅𝒖𝒘𝒂𝒓𝒂  
+╰━━━━━━━━━━━━━━━━━━━━━━━╯\n\n👉 ${string_session} 👈\n\n*This is the your Session ID, copy this id and paste into config.js file 🤫*\n\n*You can ask any question using this link 👇✒️*\n\n*https://wa.me/+94764040298*\n\n*You can join my whatsapp group*\n\n*https://chat.whatsapp.com/HRRkAxmbg2GGNWPfsX2Nfc?mode=r_t*`;
+            const mg = `*🚫⚠️ *Important Notice!* ⚠️🚫
+
+🔐 *Do NOT share this Pair Code with anyone!*  
+🤖 It gives full access to your WhatsApp Bot.  
+👁️ Keep it private and secure!  
+🛡️ Unauthorized use may compromise your account.*`;
             const dt = await RobinPairWeb.sendMessage(user_jid, {
               image: {
                 url: "https://raw.githubusercontent.com/Dark-Robin/Bot-Helper/refs/heads/main/autoimage/Bot%20robin%20WP.jpg",
