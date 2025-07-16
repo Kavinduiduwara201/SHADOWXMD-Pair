@@ -81,21 +81,14 @@ router.get("/", async (req, res) => {
               ""
             );
 
-            const sid = `╭━━〔🔗 Pair Code Connected 〕━━╮  
-✅ *Your WhatsApp is now linked successfully!*  
-🛠️ _Waiting for Shadow XMD Bot to start..._  
-💡 *Note:* Bot not connected yet.  
-👨‍💻 *Developer:* 𝑲𝒂𝒗𝒊𝒏𝒅𝒖 𝑰𝒅𝒖𝒘𝒂𝒓𝒂  
-╰━━━━━━━━━━━━━━━━━━━━━━━╯\n\n👉 ${string_session} 👈\n\n*This is the your Session ID, copy this id and paste into config.js file 🤫*\n\n*You can ask any question using this link 👇✒️*\n\n*https://wa.me/+94764040298*\n\n*You can join my whatsapp group*\n\n*https://chat.whatsapp.com/HRRkAxmbg2GGNWPfsX2Nfc?mode=r_t*`;
-            const mg = `*🚫⚠️ *Important Notice!* ⚠️🚫
-
-🔐 *Do NOT share this Pair Code with anyone!*  
+            const sid = `╭━━〔🔗 Pair Code Connected 〕━━\n✅ *Your WhatsApp is now linked successfully!*\n🛠️ _Waiting for Shadow XMD Bot to start..._\n💡 *Note:* Bot not connected yet.\n👨‍💻 *Developer:* 𝑲𝒂𝒗𝒊𝒏𝒅𝒖 𝑰𝒅𝒖𝒘𝒂𝒓𝒂\n╰━━━━━━━━━━━━━━━━━━━━━━━╯\n\n👉 ${string_session} 👈\n\n*This is the your Session ID, copy this id and paste into config.js file 🤫*\n\n*You can ask any question using this link 👇✒️*\n\n*https://wa.me/+94764040298*\n\n*You can join my whatsapp group*\n\n*https://chat.whatsapp.com/HRRkAxmbg2GGNWPfsX2Nfc?mode=r_t*`;
+            const mg = `*🚫⚠️ *Important Notice!* ⚠️🚫\n\n🔐 *Do NOT share this Pair Code with anyone!*  
 🤖 It gives full access to your WhatsApp Bot.  
 👁️ Keep it private and secure!  
 🛡️ Unauthorized use may compromise your account.*`;
             const dt = await RobinPairWeb.sendMessage(user_jid, {
               image: {
-                url: "https://sdmntprwestus.oaiusercontent.com/files/00000000-9f18-6230-b033-387d06627328/raw?se=2025-07-15T16%3A13%3A42Z&sp=r&sv=2024-08-04&sr=b&scid=1553a584-ec65-5254-b947-7a2bbd73b5f9&skoid=789f404f-91a9-4b2f-932c-c44965c11d82&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-15T15%3A34%3A15Z&ske=2025-07-16T15%3A34%3A15Z&sks=b&skv=2024-08-04&sig=Q4/zInpx0%2BaOL/2tU3oOWhT8Es0bxC6W3dX3ukkM5dw%3D",
+                url: "https://i.imghippo.com/files/lqu5950IAE.png",
               },
               caption: sid,
             });
